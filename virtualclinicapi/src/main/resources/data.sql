@@ -1,8 +1,3 @@
-SET IDENTITY_INSERT Country ON
-
---
--- Dumping data for table `Country`
---
 INSERT INTO COUNTRY (ID, ISO, NAME, ISO3, NUM_CODE, PHONE_CODE) VALUES
 (1, 'AF', 'Afghanistan', 'AFG', 4, 93),
 (2, 'AL', 'Albania', 'ALB', 8, 355),
@@ -244,4 +239,13 @@ INSERT INTO COUNTRY (ID, ISO, NAME, ISO3, NUM_CODE, PHONE_CODE) VALUES
 (238, 'ZM', 'Zambia', 'ZMB', 894, 260),
 (239, 'ZW', 'Zimbabwe', 'ZWE', 716, 263);
 
-SET IDENTITY_INSERT Countries Off
+-- --------------------------------------------------
+
+INSERT INTO SPECIALITY (`SPECIALITY_NAME`, `DESCRIPTION`) VALUES 
+ ('Surgery', 'Surgery Doctor')
+,('ENT', 'ENT Doctor')
+,('General Medicen', 'General Medecin Doctor')
+,('Family Medicin', 'Family Medicin Doctor')
+,('Opthalmology', 'Opthalmology Doctor')
+,('Chest', 'Checst Doctor')
+,('Dermatology', 'Dermatology Doctor');

@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Country {
 
 	@Id
-	@Column(name = "ID",nullable = false)
+	@Column(name = "ID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
@@ -22,7 +22,7 @@ public class Country {
 	@Column(name = "NAME" , nullable = false, length = 80)
 	private String name;
 	
-	@Column(name = "ISO3" , nullable = false, length = 3)
+	@Column(name = "ISO3" , nullable = true, length = 3)
 	private String iso3;
 	
 	@Column(name = "NUM_CODE" , nullable = true )
