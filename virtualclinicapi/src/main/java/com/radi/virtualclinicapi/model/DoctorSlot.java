@@ -17,7 +17,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 @Entity
 @Table(name = "DOCTOR_SLOT")
-public class DOCTOR_SLOT {
+public class DoctorSlot {
 
 		
 	@Id
@@ -30,7 +30,7 @@ public class DOCTOR_SLOT {
 	private User user;
 	
 	@Temporal(TemporalType.DATE)
-	@Column(name = "FREE_DATE")
+	@Column(name = "FREE_DATE" 	)
 	private Date freeDate;
 	
 	@Temporal(TemporalType.TIMESTAMP)
